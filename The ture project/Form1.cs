@@ -16,7 +16,7 @@ namespace The_ture_project
         {
             InitializeComponent();
         }
-
+// HI
         private void label1_Click(object sender, EventArgs e)
         {
 

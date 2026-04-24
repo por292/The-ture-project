@@ -1,6 +1,6 @@
 ﻿namespace The_ture_project
 {
-    partial class Inventory1
+    partial class BuildandEdit
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,16 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Inventory1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "Inventory1";
-            this.Size = new System.Drawing.Size(1249, 712);
-            this.ResumeLayout(false);
-
         }
 
         #endregion

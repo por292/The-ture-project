@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace The_ture_project
 {
-    public partial class Inventory1 : UserControl
+    public partial class BuildandEdit : UserControl
     {
-        public Inventory1()
+        public BuildandEdit()
         {
             InitializeComponent();
         }

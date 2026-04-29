@@ -80,9 +80,6 @@ namespace The_ture_project
             pnlContent.Controls.Add(newScreen);
         }
 
-        private void pnlContent_Paint(object sender, PaintEventArgs e)
-        {
-            ShowScreen(new UCInventory());
-        }
+
     }
 }

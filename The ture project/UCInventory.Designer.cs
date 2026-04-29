@@ -66,9 +66,9 @@
             this.Product,
             this.Brand,
             this.Price});
-            this.dataGridView1.Location = new System.Drawing.Point(180, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(203, 68);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(544, 400);
+            this.dataGridView1.Size = new System.Drawing.Size(420, 283);
             this.dataGridView1.TabIndex = 9;
             // 
             // ProductName
@@ -117,7 +117,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(4, 3);
+            this.groupBox1.Location = new System.Drawing.Point(23, 64);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(174, 287);
             this.groupBox1.TabIndex = 11;

@@ -32,9 +32,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.BuildandEdit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -83,14 +83,12 @@
             this.panel1.Size = new System.Drawing.Size(737, 48);
             this.panel1.TabIndex = 3;
             // 
-            // button7
+            // textBox7
             // 
-            this.button7.Location = new System.Drawing.Point(422, 11);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "Checkout";
-            this.button7.UseVisualStyleBackColor = true;
+            this.textBox7.Location = new System.Drawing.Point(623, 14);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 5;
             // 
             // label6
             // 
@@ -102,28 +100,30 @@
             this.label6.Text = "Serch";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // textBox7
+            // button7
             // 
-            this.textBox7.Location = new System.Drawing.Point(623, 14);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 5;
+            this.button7.Location = new System.Drawing.Point(422, 11);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "Checkout";
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // pnlContent
             // 
             this.pnlContent.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.pnlContent.Location = new System.Drawing.Point(1, 43);
+            this.pnlContent.Location = new System.Drawing.Point(1, 69);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(737, 411);
+            this.pnlContent.Size = new System.Drawing.Size(944, 451);
             this.pnlContent.TabIndex = 4;
-            this.pnlContent.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContent_Paint);
+
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(736, 457);
+            this.ClientSize = new System.Drawing.Size(984, 532);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";

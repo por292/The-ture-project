@@ -64,19 +64,31 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inventory.cs">
+    <Compile Include="HomePage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Inventory.Designer.cs">
-      <DependentUpon>Inventory.cs</DependentUpon>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCInventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCInventory.Designer.cs">
+      <DependentUpon>UCInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Orders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Orders.Designer.cs">
+      <DependentUpon>UC_Orders.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inventory.resx">
-      <DependentUpon>Inventory.cs</DependentUpon>
+    <EmbeddedResource Include="UCInventory.resx">
+      <DependentUpon>UCInventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

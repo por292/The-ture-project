@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace The_ture_project
 {
-    public partial class Inventory : UserControl
+    public partial class HomePage : UserControl
     {
-        public Inventory()
+        public HomePage()
         {
             InitializeComponent();
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

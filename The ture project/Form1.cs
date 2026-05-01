@@ -20,7 +20,7 @@ namespace The_ture_project
 // HI
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace The_ture_project
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            ShowScreen(new UC_Orders());
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -60,13 +60,19 @@ namespace The_ture_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            ShowScreen(new HomePage());
         }
         
 
         private void button2_Click(object sender, EventArgs e)
         {
             ShowScreen(new UCInventory());
+    
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ShowScreen(new Checkout());
         }
         private void ShowScreen(UserControl newScreen)
         {
@@ -80,6 +86,9 @@ namespace The_ture_project
             pnlContent.Controls.Add(newScreen);
         }
 
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

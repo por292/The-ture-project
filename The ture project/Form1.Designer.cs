@@ -51,7 +51,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(161, 14);
+            this.button2.Location = new System.Drawing.Point(267, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             // BuildandEdit
             // 
-            this.BuildandEdit.Location = new System.Drawing.Point(293, 12);
+            this.BuildandEdit.Location = new System.Drawing.Point(495, 11);
             this.BuildandEdit.Name = "BuildandEdit";
             this.BuildandEdit.Size = new System.Drawing.Size(75, 23);
             this.BuildandEdit.TabIndex = 2;
@@ -80,20 +80,21 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(737, 48);
+            this.panel1.Size = new System.Drawing.Size(1267, 48);
             this.panel1.TabIndex = 3;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(623, 14);
+            this.textBox7.Location = new System.Drawing.Point(1076, 14);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.Size = new System.Drawing.Size(183, 20);
             this.textBox7.TabIndex = 5;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(572, 17);
+            this.label6.Location = new System.Drawing.Point(1007, 17);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 4;
@@ -102,28 +103,28 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(422, 11);
+            this.button7.Location = new System.Drawing.Point(780, 12);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 3;
             this.button7.Text = "Checkout";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // pnlContent
             // 
             this.pnlContent.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.pnlContent.Location = new System.Drawing.Point(1, 69);
+            this.pnlContent.Location = new System.Drawing.Point(1, 54);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(944, 451);
+            this.pnlContent.Size = new System.Drawing.Size(1279, 589);
             this.pnlContent.TabIndex = 4;
-
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(984, 532);
+            this.ClientSize = new System.Drawing.Size(1272, 655);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";

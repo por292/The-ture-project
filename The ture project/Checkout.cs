@@ -16,5 +16,10 @@ namespace The_ture_project
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

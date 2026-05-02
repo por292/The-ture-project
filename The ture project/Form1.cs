@@ -17,7 +17,6 @@ namespace The_ture_project
         {
             InitializeComponent();
         }
-// HI
         private void label1_Click(object sender, EventArgs e)
         {
             
@@ -66,8 +65,7 @@ namespace The_ture_project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ShowScreen(new UCInventory());
-    
+            ShowScreen(new UCProducts());
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -87,6 +85,11 @@ namespace The_ture_project
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
         {
 
         }

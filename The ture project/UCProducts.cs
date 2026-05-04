@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace The_ture_project
 {
@@ -52,29 +53,18 @@ namespace The_ture_project
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e, string v)
         {
-            int maxCharacters = 15;
-            String err = "";
-            String contents = this.textBox1.Text;
+            textBox1_TextChanged(sender, e, v, 0 - 9);
+        }
 
-            if (contents.Length == 0)
+        private void textBox1_TextChanged(object sender, EventArgs e, string v, int result)
+        {
+            while (!Int32.TryParse(("!@#$%^&*1234567890"), out result)) ;
             {
-                err = "I am sorry but the name cannot be empty";
-           //     e.Cancel = true;
+                Console.WriteLine("Error write only numbers");
+                v = Console.ReadLine();
             }
-            else if (!contents.Replace(" ", "").Equals(contents, StringComparison.OrdinalIgnoreCase))
-            {
-                err = "I am sorry but the name cannot contain spaces";
-           //     e.Cancel = true;
-            }
-            else if (contents.Length > 15)
-            {
-                err = "I am sorry, but the name cannot have more than " + maxCharacters + " characters";
-           //     e.Cancel = true;
-            }
-
-           // this.UCProductsErrorProvider.SetError(this.textBox1, err);
         }
     }
 }

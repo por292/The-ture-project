@@ -69,11 +69,8 @@ namespace The_ture_project
 
         private void textBox1_TextChanged(object sender, EventArgs e, string v, int result)
         {
-            while (!Int32.TryParse(("!@#$%^&*1234567890"), out result)) ;
-            {
-                Console.WriteLine("Error write only numbers");
-                v = Console.ReadLine();
-            }
+
+
         }
     }
 }

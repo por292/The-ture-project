@@ -16,5 +16,10 @@ namespace The_ture_project
         {
             InitializeComponent();
         }
+
+        private void Inventory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

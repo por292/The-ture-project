@@ -30,12 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Products
+            // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "Products";
+            this.Name = "Inventory";
             this.Size = new System.Drawing.Size(1194, 664);
+            this.Load += new System.EventHandler(this.Inventory_Load);
             this.ResumeLayout(false);
 
         }

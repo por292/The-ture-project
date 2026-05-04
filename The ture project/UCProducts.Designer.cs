@@ -38,6 +38,7 @@
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -55,7 +56,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -135,6 +135,15 @@
             this.groupBox1.Size = new System.Drawing.Size(174, 597);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 381);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(176, 117);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Checkout";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox7
             // 
@@ -278,15 +287,6 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Price";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 381);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 117);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Checkout";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // UCProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,7 +295,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "UCProducts";
-            this.Size = new System.Drawing.Size(1128, 664);
+            this.Size = new System.Drawing.Size(1333, 693);
             this.Load += new System.EventHandler(this.Inventory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);

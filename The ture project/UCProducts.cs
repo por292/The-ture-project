@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -13,9 +14,17 @@ namespace The_ture_project
 {
     public partial class UCProducts : UserControl
     {
+        List<String> Products = new List<string>();
         public UCProducts()
         {
             InitializeComponent();
+            using (StreamReader sr = new StreamReader("C: /Users/0348550/Downloads/Copy of shop - product - catalog - shop - product - catalog.csv"))
+
+            {
+
+
+
+            }
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -30,7 +39,7 @@ namespace The_ture_project
 
         private void Inventory_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

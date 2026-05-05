@@ -18,10 +18,15 @@ namespace The_ture_project
         public UCProducts()
         {
             InitializeComponent();
-            using (StreamReader sr = new StreamReader("C: /Users/0348550/Downloads/Copy of shop - product - catalog - shop - product - catalog.csv"))
+            using (StreamReader sr = new StreamReader("C:/Users/0348550/Downloads/Copy of shop - product - catalog - shop - product - catalog.csv"))
 
             {
+                string line;
 
+                while ((line = sr.ReadLine()) != null)
+                {
+                    Products.Add(line);
+                }
 
 
             }
@@ -62,14 +67,9 @@ namespace The_ture_project
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e, string v)
-        {
-            textBox1_TextChanged(sender, e, v, 0 - 9);
-        }
 
-        private void textBox1_TextChanged(object sender, EventArgs e, string v, int result)
+        private void textBox8_TextChanged(object sender, EventArgs e)
         {
-
 
         }
     }

@@ -56,6 +56,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -114,6 +117,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBox7);
             this.groupBox1.Controls.Add(this.label6);
@@ -130,7 +135,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(23, 64);
+            this.groupBox1.Location = new System.Drawing.Point(23, 68);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(174, 597);
             this.groupBox1.TabIndex = 11;
@@ -138,7 +143,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(0, 381);
+            this.button1.Location = new System.Drawing.Point(0, 425);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 117);
             this.button1.TabIndex = 22;
@@ -163,9 +168,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Location = new System.Drawing.Point(6, 548);
+            this.groupBox2.Location = new System.Drawing.Point(1, 542);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(170, 49);
             this.groupBox2.TabIndex = 19;
@@ -222,7 +228,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(0, 196);
+            this.button6.Location = new System.Drawing.Point(0, 240);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(173, 87);
             this.button6.TabIndex = 13;
@@ -231,7 +237,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(0, 289);
+            this.button4.Location = new System.Drawing.Point(-3, 333);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(174, 86);
             this.button4.TabIndex = 11;
@@ -258,7 +264,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 8;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -286,6 +291,32 @@
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Price";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(1, 198);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(154, 13);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Serch Product/Brand key word";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(9, 214);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(146, 20);
+            this.textBox8.TabIndex = 24;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(119, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(18, 13);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "ID";
             // 
             // UCProducts
             // 
@@ -334,5 +365,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

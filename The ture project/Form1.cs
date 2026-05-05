@@ -18,7 +18,7 @@ namespace The_ture_project
         public Form1()
         {
             InitializeComponent();
-
+            
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -96,5 +96,59 @@ namespace The_ture_project
         {
 
         }
+
+        private void button3_Click_2(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        static void main (string[] args)
+        {
+        //    Console.WriteLine(checkPassword("MrAnjunisthebest",16));
+        }
+        static bool checkPassword(string input, string minimum)
+        {
+            bool hasNum = false;
+            bool hasCap = true;
+            bool hasLow = true;
+            bool hasSpec = false;
+            char currentCharacter;
+
+           // if(!(input.Length >= minimum))
+            {
+                return false;
+            }
+            for (int i = 0; i < input.Length; i++)
+            {
+                currentCharacter = input[i];
+                if (char.IsDigit(currentCharacter))
+                {
+                    hasNum = true;
+                }
+                else if (char.IsUpper(currentCharacter))
+                {
+                    hasCap = true;
+                }
+                else if (char.IsLower(currentCharacter))
+                {
+                    hasLow = true;
+                }
+                else if (!char.IsLetterOrDigit(currentCharacter))
+                {
+                    hasSpec = true;
+                }
+                if (hasNum && hasCap && hasLow && hasSpec)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        
     }
 }

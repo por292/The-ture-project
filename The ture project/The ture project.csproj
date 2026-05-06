@@ -107,6 +107,7 @@
     <Compile Include="Inventory.Designer.cs">
       <DependentUpon>Inventory.cs</DependentUpon>
     </Compile>
+    <Compile Include="InventoryService.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="UCProducts.cs">
       <SubType>UserControl</SubType>

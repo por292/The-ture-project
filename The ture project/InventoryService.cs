@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
-namespace Assignment_3
+namespace The_ture_project
 {
-    internal static class InventoryService
+    internal class InventoryService
     {
+        
         public static List<Product> LoadFromCSV(string filePath)
         {
             List<Product> products = new List<Product>();
@@ -29,7 +30,7 @@ namespace Assignment_3
                         string name = parts[1];
                         string brand = parts[2];
                         decimal price = decimal.Parse(parts[3]) / 100m;
-                        
+
                         // default quantity is 0
                         int quantity = 0;
 
@@ -61,3 +62,4 @@ namespace Assignment_3
         }
     }
 }
+

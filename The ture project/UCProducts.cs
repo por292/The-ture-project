@@ -17,9 +17,11 @@ namespace The_ture_project
 
         private BindingList<UCProducts> _inventoryList = new BindingList<UCProducts>();
         private BindingSource _bindingSource = new BindingSource();
-        string filePath = "C:/Users/0348550/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
+        //string filePath = "C:/Users/0348550/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
+        string filePath = "C:/Users/jan/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
 
-        public UCProducts(int id, string name, string brand, decimal price, int quantity)
+        // public UCProducts(int id, string name, string brand, decimal price, int quantity)
+        public UCProducts()
         {
             InitializeComponent();
         }
@@ -35,8 +37,8 @@ namespace The_ture_project
 
         }
 
-       /* private void Inventory_Load(object sender, EventArgs e)
-        {
+       private void Inventory_Load(object sender, EventArgs e)
+       {
             string path = filePath;
 
 
@@ -46,10 +48,15 @@ namespace The_ture_project
             {
                 _inventoryList.Add(item);
             }
-            dvgInventory.DataSource = _inventoryList;
+            dvgUCProducts.DataSource = _inventoryList;
+       }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        /*private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

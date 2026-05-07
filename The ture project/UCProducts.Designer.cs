@@ -239,6 +239,7 @@
             this.button8.TabIndex = 3;
             this.button8.Text = "Save";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -248,6 +249,7 @@
             this.button7.TabIndex = 2;
             this.button7.Text = "DEL";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button3
             // 
@@ -267,6 +269,7 @@
             this.button2.TabIndex = 0;
             this.button2.Text = "ADD";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // contextMenuStrip1
             // 
@@ -276,7 +279,7 @@
             // UCProducts
             // 
             this.Controls.Add(this.panel1);
-            this.Name = "UCProducts";
+            //this.Name = "UCProducts";
             this.Size = new System.Drawing.Size(1300, 651);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

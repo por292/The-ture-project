@@ -34,7 +34,11 @@ namespace The_ture_project
         {
             
         }
-     
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
    
 }

@@ -23,6 +23,23 @@ namespace The_ture_project
             InitializeComponent();
             SetupOrderSystem();
         }
+       /* public class OrderItem
+        {
+            public int ProductID { get; set; }
+            public string ProductName { get; set; }
+            public decimal UnitPrice { get; set; }
+            public int Quantity { get; set; }
+            public decimal Subtotal => UnitPrice * Quantity;
+        }*/
+
+      /*  public class Order
+        {
+            public string OrderName { get; set; }
+            public string Description { get; set; }
+            public DateTime OrderDate { get; set; }
+            public List<OrderItem> Items { get; set; } = new List<OrderItem>();
+            public decimal TotalAmount { get; set; }
+        }*/
         private void SetupOrderSystem()
         {
             // Apply these settings to the Inventory grid
@@ -292,6 +309,16 @@ namespace The_ture_project
             pnlContent1.Controls.Clear();
             newScreen.Dock = DockStyle.Fill;
             pnlContent1.Controls.Add(newScreen);
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvAvailable_MouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
         }
     }
     

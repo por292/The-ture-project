@@ -214,6 +214,11 @@ namespace The_ture_project
              txtPrice.Clear();
              txtQuantity.Clear();
          }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

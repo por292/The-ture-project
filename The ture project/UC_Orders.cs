@@ -23,7 +23,7 @@ namespace The_ture_project
             InitializeComponent();
             SetupOrderSystem();
         }
-       /* public class OrderItem
+       /* public class OrderItem  
         {
             public int ProductID { get; set; }
             public string ProductName { get; set; }
@@ -87,11 +87,7 @@ namespace The_ture_project
         // Drag and Drop implementation
         private void dgvAvailable_MouseDown(object sender, MouseEventArgs e)
         {
-            if (dgvAvailable.SelectedRows.Count > 0)
-            {
-                var product = (Product)dgvAvailable.SelectedRows[0].DataBoundItem;
-                dgvAvailable.DoDragDrop(product, DragDropEffects.Copy);
-            }
+            
         }
 
         private void dgvCurrentOrder_DragEnter(object sender, DragEventArgs e)
@@ -318,7 +314,11 @@ namespace The_ture_project
 
         private void dgvAvailable_MouseDown(object sender, DataGridViewCellMouseEventArgs e)
         {
-
+            if (dgvAvailable.SelectedRows.Count > 0)
+            {
+                var product = (Product)dgvAvailable.SelectedRows[0].DataBoundItem;
+                dgvAvailable.DoDragDrop(product, DragDropEffects.Copy);
+            }
         }
     }
     

@@ -32,99 +32,60 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Brand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Qauntity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtBrand = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtDelete = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.dgvInventory = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Brand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Controls.Add(this.dataGridView2);
+            this.panel1.Controls.Add(this.dgvInventory);
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Location = new System.Drawing.Point(16, 24);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1251, 587);
             this.panel1.TabIndex = 0;
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Name,
-            this.Brand,
-            this.Price,
-            this.Qauntity});
-            this.dataGridView2.Location = new System.Drawing.Point(296, 17);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(561, 550);
-            this.dataGridView2.TabIndex = 1;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // Name
-            // 
-            this.Name.HeaderText = "Name";
-            this.Name.Name = "Name";
-            // 
-            // Brand
-            // 
-            this.Brand.HeaderText = "Brand";
-            this.Brand.Name = "Brand";
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            // 
-            // Qauntity
-            // 
-            this.Qauntity.HeaderText = "Qauntity";
-            this.Qauntity.Name = "Qauntity";
-            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.textBox14);
-            this.groupBox3.Controls.Add(this.textBox13);
-            this.groupBox3.Controls.Add(this.textBox12);
-            this.groupBox3.Controls.Add(this.textBox11);
-            this.groupBox3.Controls.Add(this.textBox10);
+            this.groupBox3.Controls.Add(this.txtQuantity);
+            this.groupBox3.Controls.Add(this.txtPrice);
+            this.groupBox3.Controls.Add(this.txtBrand);
+            this.groupBox3.Controls.Add(this.txtName);
+            this.groupBox3.Controls.Add(this.txtID);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.textBox9);
+            this.groupBox3.Controls.Add(this.txtDelete);
             this.groupBox3.Controls.Add(this.button8);
             this.groupBox3.Controls.Add(this.button7);
             this.groupBox3.Controls.Add(this.button3);
@@ -144,40 +105,41 @@
             this.label14.TabIndex = 15;
             this.label14.Text = "ID";
             // 
-            // textBox14
+            // txtQuantity
             // 
-            this.textBox14.Location = new System.Drawing.Point(53, 132);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(214, 20);
-            this.textBox14.TabIndex = 14;
+            this.txtQuantity.Location = new System.Drawing.Point(53, 132);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(214, 20);
+            this.txtQuantity.TabIndex = 14;
             // 
-            // textBox13
+            // txtPrice
             // 
-            this.textBox13.Location = new System.Drawing.Point(53, 101);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(214, 20);
-            this.textBox13.TabIndex = 13;
+            this.txtPrice.Location = new System.Drawing.Point(53, 101);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(214, 20);
+            this.txtPrice.TabIndex = 13;
             // 
-            // textBox12
+            // txtBrand
             // 
-            this.textBox12.Location = new System.Drawing.Point(53, 70);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(214, 20);
-            this.textBox12.TabIndex = 12;
+            this.txtBrand.Location = new System.Drawing.Point(53, 70);
+            this.txtBrand.Name = "txtBrand";
+            this.txtBrand.Size = new System.Drawing.Size(214, 20);
+            this.txtBrand.TabIndex = 12;
             // 
-            // textBox11
+            // txtName
             // 
-            this.textBox11.Location = new System.Drawing.Point(53, 44);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(214, 20);
-            this.textBox11.TabIndex = 11;
+            this.txtName.Location = new System.Drawing.Point(53, 44);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(214, 20);
+            this.txtName.TabIndex = 11;
             // 
-            // textBox10
+            // txtID
             // 
-            this.textBox10.Location = new System.Drawing.Point(53, 13);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(214, 20);
-            this.textBox10.TabIndex = 10;
+            this.txtID.Location = new System.Drawing.Point(53, 13);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(214, 20);
+            this.txtID.TabIndex = 10;
+            this.txtID.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // label13
             // 
@@ -224,12 +186,12 @@
             this.label9.TabIndex = 5;
             this.label9.Text = "ID";
             // 
-            // textBox9
+            // txtDelete
             // 
-            this.textBox9.Location = new System.Drawing.Point(92, 500);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(165, 20);
-            this.textBox9.TabIndex = 4;
+            this.txtDelete.Location = new System.Drawing.Point(92, 500);
+            this.txtDelete.Name = "txtDelete";
+            this.txtDelete.Size = new System.Drawing.Size(165, 20);
+            this.txtDelete.TabIndex = 4;
             // 
             // button8
             // 
@@ -239,7 +201,6 @@
             this.button8.TabIndex = 3;
             this.button8.Text = "Save";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -249,7 +210,6 @@
             this.button7.TabIndex = 2;
             this.button7.Text = "DEL";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button3
             // 
@@ -259,7 +219,6 @@
             this.button3.TabIndex = 1;
             this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -276,15 +235,54 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // dgvInventory
+            // 
+            this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Name,
+            this.Brand,
+            this.Price,
+            this.Quantity});
+            this.dgvInventory.Location = new System.Drawing.Point(314, 23);
+            this.dgvInventory.Name = "dgvInventory";
+            this.dgvInventory.Size = new System.Drawing.Size(546, 544);
+            this.dgvInventory.TabIndex = 1;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Name
+            // 
+            this.Name.HeaderText = "Name";
+            this.Name.Name = "Name";
+            // 
+            // Brand
+            // 
+            this.Brand.HeaderText = "Brand";
+            this.Brand.Name = "Brand";
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Price";
+            this.Price.Name = "Price";
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.Name = "Quantity";
+            // 
             // UCProducts
             // 
             this.Controls.Add(this.panel1);
-            //this.Name = "UCProducts";
+            this.Name = "UCProducts";
             this.Size = new System.Drawing.Size(1300, 651);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -325,24 +323,24 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Brand;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Qauntity;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtDelete;
+        private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.TextBox txtBrand;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DataGridView dgvInventory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Brand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
     }
 }

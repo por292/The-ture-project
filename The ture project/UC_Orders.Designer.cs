@@ -42,11 +42,6 @@
             this.Items = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OrderItem = new System.Windows.Forms.DataGridView();
-            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlContent1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Order)).BeginInit();
@@ -170,12 +165,6 @@
             // OrderItem
             // 
             this.OrderItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OrderItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ProductID,
-            this.ProductName,
-            this.UnitPrice,
-            this.Quantity,
-            this.Subtotal});
             this.OrderItem.Location = new System.Drawing.Point(133, 16);
             this.OrderItem.Name = "OrderItem";
             this.OrderItem.Size = new System.Drawing.Size(543, 630);
@@ -183,31 +172,6 @@
             this.OrderItem.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvAvailable_MouseDown);
             this.OrderItem.DragDrop += new System.Windows.Forms.DragEventHandler(this.dgvCurrentOrder_DragDrop);
             this.OrderItem.DragEnter += new System.Windows.Forms.DragEventHandler(this.dgvCurrentOrder_DragDrop);
-            // 
-            // ProductID
-            // 
-            this.ProductID.HeaderText = "ID";
-            this.ProductID.Name = "ProductID";
-            // 
-            // ProductName
-            // 
-            this.ProductName.HeaderText = "Name";
-            this.ProductName.Name = "ProductName";
-            // 
-            // UnitPrice
-            // 
-            this.UnitPrice.HeaderText = "Price";
-            this.UnitPrice.Name = "UnitPrice";
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.Name = "Quantity";
-            // 
-            // Subtotal
-            // 
-            this.Subtotal.HeaderText = "total";
-            this.Subtotal.Name = "Subtotal";
             // 
             // UC_Orders
             // 
@@ -235,11 +199,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView Order;
         private System.Windows.Forms.DataGridView OrderItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UnitPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Subtotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn OrderName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Description;
         private System.Windows.Forms.DataGridViewTextBoxColumn OrderDate;

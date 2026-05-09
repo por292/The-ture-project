@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -42,6 +43,15 @@
             this.Items = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OrderItem = new System.Windows.Forms.DataGridView();
+            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.txtOrderName = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.pnlContent1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Order)).BeginInit();
@@ -100,6 +110,9 @@
             // 
             // pnlContent1
             // 
+            this.pnlContent1.Controls.Add(this.txtDescription);
+            this.pnlContent1.Controls.Add(this.txtOrderName);
+            this.pnlContent1.Controls.Add(this.lblTotal);
             this.pnlContent1.Controls.Add(this.groupBox1);
             this.pnlContent1.Controls.Add(this.Order);
             this.pnlContent1.Controls.Add(this.OrderItem);
@@ -134,7 +147,7 @@
             this.TotalAmount});
             this.Order.Location = new System.Drawing.Point(682, 16);
             this.Order.Name = "Order";
-            this.Order.Size = new System.Drawing.Size(530, 630);
+            this.Order.Size = new System.Drawing.Size(530, 573);
             this.Order.TabIndex = 6;
             // 
             // OrderName
@@ -165,13 +178,72 @@
             // OrderItem
             // 
             this.OrderItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.OrderItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ProductID,
+            this.ProductName,
+            this.ProductBrand,
+            this.ProductPrice,
+            this.ProductQuantity});
             this.OrderItem.Location = new System.Drawing.Point(133, 16);
             this.OrderItem.Name = "OrderItem";
-            this.OrderItem.Size = new System.Drawing.Size(543, 630);
+            this.OrderItem.Size = new System.Drawing.Size(543, 573);
             this.OrderItem.TabIndex = 5;
             this.OrderItem.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvAvailable_MouseDown);
             this.OrderItem.DragDrop += new System.Windows.Forms.DragEventHandler(this.dgvCurrentOrder_DragDrop);
             this.OrderItem.DragEnter += new System.Windows.Forms.DragEventHandler(this.dgvCurrentOrder_DragDrop);
+            // 
+            // ProductID
+            // 
+            this.ProductID.HeaderText = "ID";
+            this.ProductID.Name = "ProductID";
+            // 
+            // ProductName
+            // 
+            this.ProductName.HeaderText = "Name";
+            this.ProductName.Name = "ProductName";
+            // 
+            // ProductBrand
+            // 
+            this.ProductBrand.HeaderText = "Brand";
+            this.ProductBrand.Name = "ProductBrand";
+            // 
+            // ProductPrice
+            // 
+            this.ProductPrice.HeaderText = "Price";
+            this.ProductPrice.Name = "ProductPrice";
+            // 
+            // ProductQuantity
+            // 
+            this.ProductQuantity.HeaderText = "Quantity";
+            this.ProductQuantity.Name = "ProductQuantity";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(1138, 605);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(31, 13);
+            this.lblTotal.TabIndex = 8;
+            this.lblTotal.Text = "Total";
+            // 
+            // txtOrderName
+            // 
+            this.txtOrderName.Location = new System.Drawing.Point(156, 613);
+            this.txtOrderName.Name = "txtOrderName";
+            this.txtOrderName.Size = new System.Drawing.Size(100, 20);
+            this.txtOrderName.TabIndex = 9;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Location = new System.Drawing.Point(285, 613);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(100, 20);
+            this.txtDescription.TabIndex = 10;
             // 
             // UC_Orders
             // 
@@ -181,6 +253,7 @@
             this.Name = "UC_Orders";
             this.Size = new System.Drawing.Size(1262, 665);
             this.pnlContent1.ResumeLayout(false);
+            this.pnlContent1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Order)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OrderItem)).EndInit();
@@ -204,5 +277,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn OrderDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Items;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductBrand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductQuantity;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.TextBox txtOrderName;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

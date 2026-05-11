@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
@@ -16,7 +17,7 @@ namespace The_ture_project
     public partial class UCProducts : UserControl
     {
 
-        private BindingList<UCProducts> _inventoryList = new BindingList<UCProducts>();
+        private BindingList<Products> _inventoryList = new BindingList<Products>();
         private BindingSource _bindingSource = new BindingSource();
         //string filePath = "C:/Users/0348550/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
         string filePath = "C:/Users/jan/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";

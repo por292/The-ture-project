@@ -14,7 +14,7 @@ namespace The_ture_project
 {
     public partial class UC_Orders : UserControl
     {
-        private BindingList<Product> _availableProducts;
+        private BindingList<Products> _availableProducts;
         private BindingList<OrderItem> _currentOrderItems = new BindingList<OrderItem>();
         private string _csvPath = "C:/Users/jan/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
         //private string _csvPath = "C:/Users/0348550/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv"
@@ -75,7 +75,7 @@ namespace The_ture_project
             try
             {
                 var products = InventoryService.LoadFromCSV(_csvPath);
-                _availableProducts = new BindingList<Product>(products);
+                _availableProducts = new BindingList<Products>(products);
                 dgvAvailable.DataSource = _availableProducts;
             }
             catch (Exception ex)
@@ -92,17 +92,17 @@ namespace The_ture_project
 
         private void dgvCurrentOrder_DragEnter(object sender, DragEventArgs e)
         {
-            if (e.Data.GetDataPresent(typeof(Product)))
+            if (e.Data.GetDataPresent(typeof(Products)))
                 e.Effect = DragDropEffects.Copy;
         }
 
         private void dgvCurrentOrder_DragDrop(object sender, DragEventArgs e)
         {
-            Product droppedProduct = (Product)e.Data.GetData(typeof(Product));
+            Products droppedProduct = (Products)e.Data.GetData(typeof(Products));
             AddProductToOrder(droppedProduct);
         }
 
-        private void AddProductToOrder(Product product)
+        private void AddProductToOrder(Products product)
         {
             var existingItem = _currentOrderItems.FirstOrDefault(i => i.ProductID == product.ProductID);
 
@@ -202,7 +202,7 @@ namespace The_ture_project
             if (dgvAvailable.SelectedRows.Count > 0)
             {
                 // Get the selected product object from the inventory grid
-                Product selectedProduct = (Product)dgvAvailable.SelectedRows[0].DataBoundItem;
+                Products selectedProduct = (Products)dgvAvailable.SelectedRows[0].DataBoundItem;
 
                 // Use the existing logic to add it to the order
                 AddProductToOrder(selectedProduct);
@@ -317,7 +317,7 @@ namespace The_ture_project
         {
             if (dgvAvailable.SelectedRows.Count > 0)
             {
-                var product = (Product)dgvAvailable.SelectedRows[0].DataBoundItem;
+                var product = (Products)dgvAvailable.SelectedRows[0].DataBoundItem;
                 dgvAvailable.DoDragDrop(product, DragDropEffects.Copy);
             }
         }

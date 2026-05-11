@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace The_ture_project
 {
-    internal class Product
+    internal class Products
     {
         public int ProductID { get; set; }
         public string ProductName { get; set; }
@@ -14,7 +14,7 @@ namespace The_ture_project
         public decimal ProductPrice { get; set; }
         public int ProductQuantity { get; set; }
 
-        public Product(int id, string name, string brand, decimal price, int quantity)
+        public Products(int id, string name, string brand, decimal price, int quantity)
         {
             ProductID = id;
             ProductName = name;

@@ -10,9 +10,9 @@ namespace The_ture_project
     internal class InventoryService
     {
         
-        public static List<Product> LoadFromCSV(string filePath)
+        public static List<Products> LoadFromCSV(string filePath)
         {
-            List<Product> products = new List<Product>();
+            List<Products> products = new List<Products>();
             if (!File.Exists(filePath)) return products;
 
             var lines = File.ReadAllLines(filePath).Skip(1);
@@ -34,7 +34,7 @@ namespace The_ture_project
                         // default quantity is 0
                         int quantity = 0;
 
-                        products.Add(new Product(id, name, brand, price, quantity));
+                        products.Add(new Products(id, name, brand, price, quantity));
                     }
                     catch
                     {
@@ -45,7 +45,7 @@ namespace The_ture_project
             return products;
         }
 
-        public static void SaveToCSV(string filePath, List<Product> products)
+        public static void SaveToCSV(string filePath, List<Products> products)
         {
             using (StreamWriter writer = new StreamWriter(filePath))
             {

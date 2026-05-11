@@ -111,7 +111,7 @@ namespace The_ture_project
             decimal price = decimal.Parse(txtPrice.Text);
             int quantity = int.Parse(txtQuantity.Text);
 
-            Product newProduct = new Product(newId, name, brand, price, quantity);
+            Products newProduct = new Products(newId, name, brand, price, quantity);
             _inventoryList.Add(newProduct);
 
             // 4. Refresh the grid to show the new item
@@ -129,7 +129,7 @@ namespace The_ture_project
                 string path = filePath;
 
                 // Convert the BindingList to a standard List to pass to the service
-                List<Product> listToSave = _inventoryList.ToList();
+                List<Products> listToSave = _inventoryList.ToList();
 
                 // Call the save method
                 InventoryService.SaveToCSV(path, listToSave);
@@ -155,7 +155,7 @@ namespace The_ture_project
 
             // Find the product in the BindingList
             // This checks if the ID matches OR if the Name matches (ignoring case)
-            Product productToDelete = _inventoryList.FirstOrDefault(p =>
+            Products productToDelete = _inventoryList.FirstOrDefault(p =>
                 p.ProductID.ToString() == searchTerm ||
                 p.ProductName.Equals(searchTerm, StringComparison.OrdinalIgnoreCase));
 

@@ -109,7 +109,7 @@ namespace The_ture_project
 
         static void main (string[] args)
         {
-        //    Console.WriteLine(checkPassword("MrAnjunisthebest",16));
+        //  Console.WriteLine(checkPassword("MrAnjunisthebest",16));
         }
         static bool checkPassword(string input, string minimum)
         {
@@ -149,6 +149,15 @@ namespace The_ture_project
             }
             return false;
         }
-        
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Owner = this;
+            f2.StartPosition = FormStartPosition.Manual;
+            f2.Location = this.Location;
+            f2.Show();
+            this.Hide();
+        }
     }
 }

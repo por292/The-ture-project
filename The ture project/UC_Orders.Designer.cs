@@ -44,6 +44,11 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlContent1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCurrentOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailable)).BeginInit();
@@ -116,6 +121,12 @@
             // dgvCurrentOrder
             // 
             this.dgvCurrentOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCurrentOrder.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ProductID,
+            this.ProductName,
+            this.UnitPrice,
+            this.Quantity,
+            this.Subtotal});
             this.dgvCurrentOrder.Location = new System.Drawing.Point(647, 16);
             this.dgvCurrentOrder.Name = "dgvCurrentOrder";
             this.dgvCurrentOrder.Size = new System.Drawing.Size(547, 586);
@@ -134,14 +145,14 @@
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(285, 613);
+            this.txtDescription.Location = new System.Drawing.Point(165, 617);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(100, 20);
             this.txtDescription.TabIndex = 10;
             // 
             // txtOrderName
             // 
-            this.txtOrderName.Location = new System.Drawing.Point(156, 613);
+            this.txtOrderName.Location = new System.Drawing.Point(165, 591);
             this.txtOrderName.Name = "txtOrderName";
             this.txtOrderName.Size = new System.Drawing.Size(100, 20);
             this.txtOrderName.TabIndex = 9;
@@ -180,12 +191,44 @@
             this.colID.DataPropertyName = "ProductID";
             this.colID.HeaderText = "ID";
             this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
             // 
             // colName
             // 
             this.colName.DataPropertyName = "ProductName";
             this.colName.HeaderText = "Product Name";
             this.colName.Name = "colName";
+            this.colName.ReadOnly = true;
+            // 
+            // ProductID
+            // 
+            this.ProductID.HeaderText = "ID";
+            this.ProductID.Name = "ProductID";
+            this.ProductID.ReadOnly = true;
+            // 
+            // ProductName
+            // 
+            this.ProductName.HeaderText = "Product";
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            // 
+            // UnitPrice
+            // 
+            this.UnitPrice.HeaderText = "Price";
+            this.UnitPrice.Name = "UnitPrice";
+            this.UnitPrice.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Qty";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // Subtotal
+            // 
+            this.Subtotal.HeaderText = "Subtotal";
+            this.Subtotal.Name = "Subtotal";
+            this.Subtotal.ReadOnly = true;
             // 
             // UC_Orders
             // 
@@ -218,6 +261,11 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.DataGridView dgvAvailable;
         private System.Windows.Forms.DataGridView dgvCurrentOrder;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UnitPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Subtotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn colID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colName;
     }

@@ -277,7 +277,7 @@
             // UCProducts
             // 
             this.Controls.Add(this.panel1);
-            this.Name = "UCProducts";
+            //this.Name = "UCProducts";
             this.Size = new System.Drawing.Size(1300, 651);
             this.panel1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);

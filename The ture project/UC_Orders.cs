@@ -321,6 +321,16 @@ namespace The_ture_project
                 dgvAvailable.DoDragDrop(product, DragDropEffects.Copy);
             }
         }
+
+        private void dgvCurrentOrder_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

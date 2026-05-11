@@ -34,7 +34,8 @@ namespace The_ture_project
                         // default quantity is 0
                         int quantity = 0;
 
-                        products.Add(new Products(id, name, brand, price, quantity));
+                            products.Add(new Products(id, name, brand, price, quantity));
+                        //products.Add(id, name, brand, price, quantity);
                     }
                     catch
                     {

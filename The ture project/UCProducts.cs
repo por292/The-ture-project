@@ -26,6 +26,17 @@ namespace The_ture_project
         public UCProducts()
         {
             InitializeComponent();
+            string path = filePath;
+
+            var tempData = InventoryService.LoadFromCSV(path);
+
+            _inventoryList.Clear();
+            foreach (var item in tempData)
+            {
+                _inventoryList.Add(item);
+            }
+
+            dgvInventory.DataSource = _inventoryList;
         }
 
 
@@ -41,7 +52,7 @@ namespace The_ture_project
 
         private void Inventory_Load(object sender, EventArgs e)
         {
-            string path = filePath;
+          /*  string path = filePath;
 
             var tempData = InventoryService.LoadFromCSV(path);
 
@@ -51,7 +62,7 @@ namespace The_ture_project
                 _inventoryList.Add(item);
             }
 
-            dgvInventory.DataSource = _inventoryList;
+            dgvInventory.DataSource = _inventoryList;*/
         }
 
         private void button3_Click(object sender, EventArgs e)

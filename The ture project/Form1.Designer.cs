@@ -34,10 +34,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnlContent.SuspendLayout();
             this.SuspendLayout();
@@ -81,7 +81,7 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1267, 48);
+            this.panel1.Size = new System.Drawing.Size(1335, 57);
             this.panel1.TabIndex = 3;
             // 
             // button7
@@ -103,8 +103,18 @@
             this.pnlContent.Controls.Add(this.button3);
             this.pnlContent.Location = new System.Drawing.Point(1, 54);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(1279, 589);
+            this.pnlContent.Size = new System.Drawing.Size(1335, 698);
             this.pnlContent.TabIndex = 4;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(1118, 254);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(141, 110);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Form2";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
@@ -133,22 +143,12 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click_2);
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(1118, 254);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(141, 110);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Form2";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1272, 655);
+            this.ClientSize = new System.Drawing.Size(1336, 751);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";

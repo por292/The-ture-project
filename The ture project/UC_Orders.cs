@@ -16,8 +16,8 @@ namespace The_ture_project
     {
         private BindingList<Products> _availableProducts;
         private BindingList<OrderItem> _currentOrderItems = new BindingList<OrderItem>();
-        private string _csvPath = "C:/Users/jan/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
-        //private string _csvPath = "C:/Users/0348550/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv"
+        //private string _csvPath = "C:/Users/jan/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
+        private string _csvPath = "C:/Users/0348550/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
         public UC_Orders()
         {
             InitializeComponent();

@@ -3,71 +3,51 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
-using static System.Net.Mime.MediaTypeNames;
+using System.Text.RegularExpressions;
 
 namespace The_ture_project
 {
     public partial class UCProducts : UserControl
     {
-
-        private BindingList<Products> _inventoryList = new BindingList<Products>();
-        private BindingSource _bindingSource = new BindingSource();
-        //string filePath = "C:/Users/0348550/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
-        string filePath = "C:/Users/jan/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
-
-        // public UCProducts(int id, string name, string brand, decimal price, int quantity)
         public UCProducts()
         {
             InitializeComponent();
-            string path = filePath;
-
-            var tempData = InventoryService.LoadFromCSV(path);
-
-            _inventoryList.Clear();
-            foreach (var item in tempData)
-            {
-                _inventoryList.Add(item);
-            }
-
-            dgvInventory.DataSource = _inventoryList;
         }
+        private BindingList<Products> _inventoryList = new BindingList<Products>();
+        private BindingSource _bindingSource = new BindingSource();
 
+        string filePath = "C:/Users/0348550/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
+        //string filePath = "C:/Users/jan/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
 
-        private void label6_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+            //ADD
+            if (!ValidateInputs()) return;
 
-        }
+            // 2. Create the new product
+            int newId = _inventoryList.Count + 1000;
+            string name = txtName.Text;
+            string brand = txtBrand.Text;
+            decimal price = decimal.Parse(txtPrice.Text);
+            int quantity = int.Parse(txtQuantity.Text);
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
+            Products newProduct = new Products(newId, name, brand, price, quantity);
+            _inventoryList.Add(newProduct);
 
-        }
+            // 4. Refresh the grid to show the new item
+            _bindingSource.ResetBindings(false);
 
-        private void Inventory_Load(object sender, EventArgs e)
-        {
-          /*  string path = filePath;
-
-            var tempData = InventoryService.LoadFromCSV(path);
-
-            _inventoryList.Clear();
-            foreach (var item in tempData)
-            {
-                _inventoryList.Add(item);
-            }
-
-            dgvInventory.DataSource = _inventoryList;*/
+            // 5. Clear fields for the next entry
+            ClearFields();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //update
+            //Update
             // 1. Check if a Product ID is present to identify the record
             if (!int.TryParse(txtID.Text, out int idToUpdate))
             {
@@ -103,39 +83,10 @@ namespace The_ture_project
                 MessageBox.Show("Product ID not found in inventory.");
             }
         }
-        
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //Add
-            // 1. Validation
-            if (!ValidateInputs()) return;
-
-            // 2. Create the new product
-            int newId = _inventoryList.Count + 1000;
-            string name = txtName.Text;
-            string brand = txtBrand.Text;
-            decimal price = decimal.Parse(txtPrice.Text);
-            int quantity = int.Parse(txtQuantity.Text);
-
-            Products newProduct = new Products(newId, name, brand, price, quantity);
-            _inventoryList.Add(newProduct);
-
-            // 4. Refresh the grid to show the new item
-            _bindingSource.ResetBindings(false);
-
-            // 5. Clear fields for the next entry
-            ClearFields();
-        }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            //save
+            //SAVE
             try
             {
                 string path = filePath;
@@ -156,7 +107,7 @@ namespace The_ture_project
 
         private void button7_Click(object sender, EventArgs e)
         {
-            //del
+            //DEL
             string searchTerm = txtDelete.Text.Trim();
 
             if (string.IsNullOrWhiteSpace(searchTerm))
@@ -193,44 +144,57 @@ namespace The_ture_project
                 MessageBox.Show("No product found matching that ID or Name.");
             }
         }
-        
-         private bool ValidateInputs()
-         {
 
-             if (!Regex.IsMatch(txtName.Text, @"^[a-zA-Z0-9 ]+$"))
-             {
-                 MessageBox.Show("Product Name contains invalid characters.");
-                 return false;
-             }
-
-
-             if (!decimal.TryParse(txtPrice.Text, out decimal price) || price < 0)
-             {
-                 MessageBox.Show("Please enter a valid positive price.");
-                 return false;
-             }
-
-             if (!int.TryParse(txtQuantity.Text, out int qty) || qty < 0)
-             {
-                 MessageBox.Show("Please enter a valid positive quantity.");
-                 return false;
-             }
-
-             return true;
-         }
-         private void ClearFields()
-         {
-             txtID.Clear();
-             txtName.Clear();
-             txtBrand.Clear();
-             txtPrice.Clear();
-             txtQuantity.Clear();
-         }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
+        private void UCProducts_Load(object sender, EventArgs e)
         {
+            string path = filePath;
 
+            // 1. Load the data into a temporary list
+            var tempData = InventoryService.LoadFromCSV(path);
+
+            // 2. Clear the BindingList and add the loaded data
+            _inventoryList.Clear();
+            foreach (var item in tempData)
+            {
+                _inventoryList.Add(item);
+            }
+
+            // 3. Bind the BindingList to the grid
+            dgvInventory.DataSource = _inventoryList;
+        }
+        private bool ValidateInputs()
+        {
+            // Check if Name contains invalid special characters like #, $, @
+            // This regex allows only letters, numbers, and spaces
+            if (!Regex.IsMatch(txtName.Text, @"^[a-zA-Z0-9 ]+$"))
+            {
+                MessageBox.Show("Product Name contains invalid characters.");
+                return false;
+            }
+
+            // Check if Price is a positive decimal
+            if (!decimal.TryParse(txtPrice.Text, out decimal price) || price < 0)
+            {
+                MessageBox.Show("Please enter a valid positive price.");
+                return false;
+            }
+
+            // Check if Quantity is a positive integer
+            if (!int.TryParse(txtQuantity.Text, out int qty) || qty < 0)
+            {
+                MessageBox.Show("Please enter a valid positive quantity.");
+                return false;
+            }
+
+            return true;
+        }
+        private void ClearFields()
+        {
+            txtID.Clear();
+            txtName.Clear();
+            txtBrand.Clear();
+            txtPrice.Clear();
+            txtQuantity.Clear();
         }
     }
 }
-

@@ -331,6 +331,16 @@ namespace The_ture_project
         {
 
         }
+
+        private void dgvAvailable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtOrderName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

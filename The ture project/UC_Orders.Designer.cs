@@ -36,6 +36,11 @@
             this.button5 = new System.Windows.Forms.Button();
             this.pnlContent1 = new System.Windows.Forms.Panel();
             this.dgvCurrentOrder = new System.Windows.Forms.DataGridView();
+            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Product = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvAvailable = new System.Windows.Forms.DataGridView();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,11 +49,8 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Product = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnlContent1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCurrentOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailable)).BeginInit();
@@ -108,13 +110,15 @@
             // pnlContent1
             // 
             this.pnlContent1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pnlContent1.Controls.Add(this.label2);
+            this.pnlContent1.Controls.Add(this.label1);
             this.pnlContent1.Controls.Add(this.dgvCurrentOrder);
             this.pnlContent1.Controls.Add(this.dgvAvailable);
             this.pnlContent1.Controls.Add(this.txtDescription);
             this.pnlContent1.Controls.Add(this.txtOrderName);
             this.pnlContent1.Controls.Add(this.lblTotal);
             this.pnlContent1.Controls.Add(this.groupBox1);
-            this.pnlContent1.Location = new System.Drawing.Point(20, 13);
+            this.pnlContent1.Location = new System.Drawing.Point(3, 3);
             this.pnlContent1.Name = "pnlContent1";
             this.pnlContent1.Size = new System.Drawing.Size(1227, 649);
             this.pnlContent1.TabIndex = 5;
@@ -130,9 +134,39 @@
             this.Subtotal});
             this.dgvCurrentOrder.Location = new System.Drawing.Point(441, 16);
             this.dgvCurrentOrder.Name = "dgvCurrentOrder";
-            this.dgvCurrentOrder.Size = new System.Drawing.Size(783, 586);
+            this.dgvCurrentOrder.Size = new System.Drawing.Size(551, 586);
             this.dgvCurrentOrder.TabIndex = 12;
             this.dgvCurrentOrder.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCurrentOrder_CellContentClick);
+            // 
+            // ProductID
+            // 
+            this.ProductID.HeaderText = "ID";
+            this.ProductID.Name = "ProductID";
+            this.ProductID.ReadOnly = true;
+            // 
+            // Product
+            // 
+            this.Product.HeaderText = "Product";
+            this.Product.Name = "Product";
+            this.Product.ReadOnly = true;
+            // 
+            // UnitPrice
+            // 
+            this.UnitPrice.HeaderText = "Price";
+            this.UnitPrice.Name = "UnitPrice";
+            this.UnitPrice.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Qty";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // Subtotal
+            // 
+            this.Subtotal.HeaderText = "Subtotal";
+            this.Subtotal.Name = "Subtotal";
+            this.Subtotal.ReadOnly = true;
             // 
             // dgvAvailable
             // 
@@ -162,7 +196,7 @@
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(165, 617);
+            this.txtDescription.Location = new System.Drawing.Point(1047, 223);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(100, 20);
             this.txtDescription.TabIndex = 10;
@@ -170,7 +204,7 @@
             // 
             // txtOrderName
             // 
-            this.txtOrderName.Location = new System.Drawing.Point(284, 617);
+            this.txtOrderName.Location = new System.Drawing.Point(1047, 125);
             this.txtOrderName.Name = "txtOrderName";
             this.txtOrderName.Size = new System.Drawing.Size(100, 20);
             this.txtOrderName.TabIndex = 9;
@@ -205,35 +239,23 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // ProductID
+            // label1
             // 
-            this.ProductID.HeaderText = "ID";
-            this.ProductID.Name = "ProductID";
-            this.ProductID.ReadOnly = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1091, 113);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "label1";
             // 
-            // Product
+            // label2
             // 
-            this.Product.HeaderText = "Product";
-            this.Product.Name = "Product";
-            this.Product.ReadOnly = true;
-            // 
-            // UnitPrice
-            // 
-            this.UnitPrice.HeaderText = "Price";
-            this.UnitPrice.Name = "UnitPrice";
-            this.UnitPrice.ReadOnly = true;
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Qty";
-            this.Quantity.Name = "Quantity";
-            this.Quantity.ReadOnly = true;
-            // 
-            // Subtotal
-            // 
-            this.Subtotal.HeaderText = "Subtotal";
-            this.Subtotal.Name = "Subtotal";
-            this.Subtotal.ReadOnly = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1099, 211);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "label2";
             // 
             // UC_Orders
             // 
@@ -273,5 +295,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn UnitPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn Subtotal;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

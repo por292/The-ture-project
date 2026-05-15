@@ -30,11 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvInventory = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Brand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtQuantity = new System.Windows.Forms.TextBox();
@@ -48,10 +43,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtDelete = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Save = new System.Windows.Forms.Button();
+            this.DEL = new System.Windows.Forms.Button();
+            this.Update = new System.Windows.Forms.Button();
+            this.ADD = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -70,41 +65,10 @@
             // dgvInventory
             // 
             this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.pName,
-            this.Brand,
-            this.Price,
-            this.Quantity});
             this.dgvInventory.Location = new System.Drawing.Point(314, 23);
             this.dgvInventory.Name = "dgvInventory";
             this.dgvInventory.Size = new System.Drawing.Size(546, 544);
             this.dgvInventory.TabIndex = 1;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // pName
-            // 
-            this.pName.HeaderText = "Name";
-            this.pName.Name = "pName";
-            // 
-            // Brand
-            // 
-            this.Brand.HeaderText = "Brand";
-            this.Brand.Name = "Brand";
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.Name = "Quantity";
             // 
             // groupBox3
             // 
@@ -121,10 +85,10 @@
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.txtDelete);
-            this.groupBox3.Controls.Add(this.button8);
-            this.groupBox3.Controls.Add(this.button7);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.Save);
+            this.groupBox3.Controls.Add(this.DEL);
+            this.groupBox3.Controls.Add(this.Update);
+            this.groupBox3.Controls.Add(this.ADD);
             this.groupBox3.Location = new System.Drawing.Point(8, 17);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(273, 550);
@@ -227,45 +191,45 @@
             this.txtDelete.Size = new System.Drawing.Size(165, 20);
             this.txtDelete.TabIndex = 4;
             // 
-            // button8
+            // Save
             // 
-            this.button8.Location = new System.Drawing.Point(0, 458);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Save";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.Save.Location = new System.Drawing.Point(0, 458);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(75, 23);
+            this.Save.TabIndex = 3;
+            this.Save.Text = "Save";
+            this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button7
+            // DEL
             // 
-            this.button7.Location = new System.Drawing.Point(0, 500);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 21);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "DEL";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.DEL.Location = new System.Drawing.Point(0, 500);
+            this.DEL.Name = "DEL";
+            this.DEL.Size = new System.Drawing.Size(75, 21);
+            this.DEL.TabIndex = 2;
+            this.DEL.Text = "DEL";
+            this.DEL.UseVisualStyleBackColor = true;
+            this.DEL.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button3
+            // Update
             // 
-            this.button3.Location = new System.Drawing.Point(0, 300);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(273, 82);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Update";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.Update.Location = new System.Drawing.Point(0, 300);
+            this.Update.Name = "Update";
+            this.Update.Size = new System.Drawing.Size(273, 82);
+            this.Update.TabIndex = 1;
+            this.Update.Text = "Update";
+            this.Update.UseVisualStyleBackColor = true;
+            this.Update.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // ADD
             // 
-            this.button2.Location = new System.Drawing.Point(0, 205);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(273, 68);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "ADD";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ADD.Location = new System.Drawing.Point(0, 205);
+            this.ADD.Name = "ADD";
+            this.ADD.Size = new System.Drawing.Size(273, 68);
+            this.ADD.TabIndex = 0;
+            this.ADD.Text = "ADD";
+            this.ADD.UseVisualStyleBackColor = true;
+            this.ADD.Click += new System.EventHandler(this.button2_Click);
             // 
             // UCProducts
             // 
@@ -287,11 +251,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvInventory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Brand;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtQuantity;
@@ -305,9 +264,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtDelete;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Save;
+        private System.Windows.Forms.Button DEL;
+        private System.Windows.Forms.Button Update;
+        private System.Windows.Forms.Button ADD;
     }
 }

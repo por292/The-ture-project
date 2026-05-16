@@ -99,7 +99,21 @@ namespace The_ture_project
 
         private void button3_Click_2(object sender, EventArgs e)
         {
-           
+            Console.WriteLine(textBox1.Text);
+            bool passcheck = checkPassword(textBox1.Text, 16);
+            if (passcheck)
+            {
+                MessageBox.Show("Password is correct");
+                button1.Enabled = true;
+                button2.Enabled = true;
+                button7.Enabled = true;
+                BuildandEdit.Enabled = true;
+                button4.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("Password is incorrect");
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -109,17 +123,18 @@ namespace The_ture_project
 
         static void main (string[] args)
         {
-        //  Console.WriteLine(checkPassword("MrAnjunisthebest",16));
+          //Console.WriteLine(checkPassword("MrAnjunisthebest",16));
         }
-        static bool checkPassword(string input, string minimum)
+        static bool checkPassword(string input, int minimum)
         {
             bool hasNum = false;
-            bool hasCap = true;
-            bool hasLow = true;
+            bool hasCap = false;
+            bool hasLow = false;
             bool hasSpec = false;
             char currentCharacter;
+            string thepass = "MrAnjunisthebest1!";
 
-           // if(!(input.Length >= minimum))
+            if(input.Length < minimum)
             {
                 return false;
             }
@@ -142,12 +157,17 @@ namespace The_ture_project
                 {
                     hasSpec = true;
                 }
-                if (hasNum && hasCap && hasLow && hasSpec)
-                {
-                    return true;
-                }
+                
             }
-            return false;
+            if (hasNum && hasCap && hasLow && hasSpec)
+            {
+                if (input == thepass) { return true; } else { return false; }
+            }
+            else
+            {
+                return false;
+            }
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -158,6 +178,11 @@ namespace The_ture_project
             f2.Location = this.Location;
             f2.Show();
             this.Hide();
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

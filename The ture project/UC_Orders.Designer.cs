@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Checkout = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.pnlContent1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.dgvCurrentOrder = new System.Windows.Forms.DataGridView();
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Product = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,23 +51,21 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pnlContent1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCurrentOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailable)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // Checkout
             // 
-            this.button1.Location = new System.Drawing.Point(6, 272);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 78);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Checkout";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Checkout.Location = new System.Drawing.Point(6, 272);
+            this.Checkout.Name = "Checkout";
+            this.Checkout.Size = new System.Drawing.Size(91, 78);
+            this.Checkout.TabIndex = 0;
+            this.Checkout.Text = "Checkout";
+            this.Checkout.UseVisualStyleBackColor = true;
+            this.Checkout.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -122,6 +122,24 @@
             this.pnlContent1.Name = "pnlContent1";
             this.pnlContent1.Size = new System.Drawing.Size(1227, 649);
             this.pnlContent1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1099, 211);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "label2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1091, 113);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "label1";
             // 
             // dgvCurrentOrder
             // 
@@ -225,7 +243,7 @@
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.Checkout);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Location = new System.Drawing.Point(3, 16);
             this.groupBox1.Name = "groupBox1";
@@ -238,24 +256,6 @@
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1091, 113);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "label1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1099, 211);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "label2";
             // 
             // UC_Orders
             // 
@@ -275,7 +275,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Checkout;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;

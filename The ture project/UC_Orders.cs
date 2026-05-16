@@ -142,7 +142,7 @@ namespace The_ture_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ShowScreen(new UC_Orders());
+            ShowScreen(new Checkout());
             if (string.IsNullOrWhiteSpace(txtOrderName.Text))
             {
                 MessageBox.Show("Please enter an order name.");

@@ -16,7 +16,7 @@ namespace The_ture_project
         public UCProducts()
         {
             InitializeComponent();
-        }
+        }   
         private BindingList<Products> _inventoryList = new BindingList<Products>();
         private BindingSource _bindingSource = new BindingSource();
 

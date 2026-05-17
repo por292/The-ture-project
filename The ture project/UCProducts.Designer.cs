@@ -69,6 +69,7 @@
             this.dgvInventory.Name = "dgvInventory";
             this.dgvInventory.Size = new System.Drawing.Size(546, 544);
             this.dgvInventory.TabIndex = 1;
+            this.dgvInventory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInventory_CellContentClick);
             // 
             // groupBox3
             // 
@@ -138,6 +139,7 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(214, 20);
             this.txtID.TabIndex = 10;
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
             // label13
             // 

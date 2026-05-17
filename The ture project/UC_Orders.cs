@@ -58,6 +58,9 @@ namespace The_ture_project
             dgvAvailable.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "ProductID", HeaderText = "ID", Name = "colID", Width = 50 });
             dgvAvailable.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "ProductName", HeaderText = "Product Name", Name = "colName", AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill });
 
+            //dgvAvailable.DataSource = _availableProducts;
+            UC_Orders_Load();
+
             // Configure Current Order Grid (Right)
             dgvCurrentOrder.AutoGenerateColumns = false;
             dgvCurrentOrder.Columns.Clear();
@@ -70,7 +73,7 @@ namespace The_ture_project
             dgvCurrentOrder.DataSource = _currentOrderItems;
             dgvCurrentOrder.AllowDrop = true;
         }
-        private void UC_Orders_Load(object sender, EventArgs e)
+        private void UC_Orders_Load() //object sender, EventArgs e
         {
             try
             {

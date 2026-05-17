@@ -196,5 +196,15 @@ namespace The_ture_project
             txtPrice.Clear();
             txtQuantity.Clear();
         }
+
+        private void dgvInventory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

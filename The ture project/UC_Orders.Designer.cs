@@ -264,6 +264,7 @@
             this.Controls.Add(this.pnlContent1);
             this.Name = "UC_Orders";
             this.Size = new System.Drawing.Size(1262, 665);
+            this.Load += new System.EventHandler(this.UC_Orders_Load_1);
             this.pnlContent1.ResumeLayout(false);
             this.pnlContent1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCurrentOrder)).EndInit();

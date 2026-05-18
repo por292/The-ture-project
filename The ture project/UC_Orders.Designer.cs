@@ -35,8 +35,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.pnlContent1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.dgvCurrentOrder = new System.Windows.Forms.DataGridView();
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Product = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,11 +44,11 @@
             this.dgvAvailable = new System.Windows.Forms.DataGridView();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtDescription = new System.Windows.Forms.TextBox();
-            this.txtOrderName = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.txtOrderName = new System.Windows.Forms.TextBox();
             this.pnlContent1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCurrentOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailable)).BeginInit();
@@ -59,7 +57,7 @@
             // 
             // Checkout
             // 
-            this.Checkout.Location = new System.Drawing.Point(6, 272);
+            this.Checkout.Location = new System.Drawing.Point(5, 546);
             this.Checkout.Name = "Checkout";
             this.Checkout.Size = new System.Drawing.Size(91, 78);
             this.Checkout.TabIndex = 0;
@@ -79,7 +77,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(6, 544);
+            this.button3.Location = new System.Drawing.Point(5, 147);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(91, 80);
             this.button3.TabIndex = 2;
@@ -89,7 +87,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(5, 145);
+            this.button4.Location = new System.Drawing.Point(5, 278);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(91, 82);
             this.button4.TabIndex = 3;
@@ -99,7 +97,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(6, 393);
+            this.button5.Location = new System.Drawing.Point(5, 412);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(91, 90);
             this.button5.TabIndex = 4;
@@ -110,36 +108,16 @@
             // pnlContent1
             // 
             this.pnlContent1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.pnlContent1.Controls.Add(this.label2);
-            this.pnlContent1.Controls.Add(this.label1);
             this.pnlContent1.Controls.Add(this.dgvCurrentOrder);
             this.pnlContent1.Controls.Add(this.dgvAvailable);
-            this.pnlContent1.Controls.Add(this.txtDescription);
             this.pnlContent1.Controls.Add(this.txtOrderName);
+            this.pnlContent1.Controls.Add(this.txtDescription);
             this.pnlContent1.Controls.Add(this.lblTotal);
             this.pnlContent1.Controls.Add(this.groupBox1);
             this.pnlContent1.Location = new System.Drawing.Point(3, 3);
             this.pnlContent1.Name = "pnlContent1";
             this.pnlContent1.Size = new System.Drawing.Size(1227, 649);
             this.pnlContent1.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1099, 211);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "label2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1091, 113);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "label1";
             // 
             // dgvCurrentOrder
             // 
@@ -212,28 +190,15 @@
             this.colName.Name = "colName";
             this.colName.ReadOnly = true;
             // 
-            // txtDescription
-            // 
-            this.txtDescription.Location = new System.Drawing.Point(1047, 223);
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(100, 20);
-            this.txtDescription.TabIndex = 10;
-            this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
-            // 
-            // txtOrderName
-            // 
-            this.txtOrderName.Location = new System.Drawing.Point(1047, 125);
-            this.txtOrderName.Name = "txtOrderName";
-            this.txtOrderName.Size = new System.Drawing.Size(100, 20);
-            this.txtOrderName.TabIndex = 9;
-            this.txtOrderName.TextChanged += new System.EventHandler(this.txtOrderName_TextChanged);
-            // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(1138, 605);
+            this.lblTotal.BackColor = System.Drawing.SystemColors.Control;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblTotal.Location = new System.Drawing.Point(998, 16);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(31, 13);
+            this.lblTotal.Size = new System.Drawing.Size(109, 46);
             this.lblTotal.TabIndex = 8;
             this.lblTotal.Text = "Total";
             // 
@@ -256,6 +221,22 @@
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Location = new System.Drawing.Point(413, 129);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(10, 20);
+            this.txtDescription.TabIndex = 10;
+            this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
+            // 
+            // txtOrderName
+            // 
+            this.txtOrderName.Location = new System.Drawing.Point(413, 245);
+            this.txtOrderName.Name = "txtOrderName";
+            this.txtOrderName.Size = new System.Drawing.Size(10, 20);
+            this.txtOrderName.TabIndex = 9;
+            this.txtOrderName.TextChanged += new System.EventHandler(this.txtOrderName_TextChanged);
             // 
             // UC_Orders
             // 
@@ -284,8 +265,6 @@
         private System.Windows.Forms.Panel pnlContent1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.TextBox txtDescription;
-        private System.Windows.Forms.TextBox txtOrderName;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.DataGridView dgvAvailable;
         private System.Windows.Forms.DataGridView dgvCurrentOrder;
@@ -296,7 +275,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn UnitPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn Subtotal;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtOrderName;
+        private System.Windows.Forms.TextBox txtDescription;
     }
 }

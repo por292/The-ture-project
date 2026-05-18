@@ -113,7 +113,7 @@
             // button4
             // 
             this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(1118, 254);
+            this.button4.Location = new System.Drawing.Point(590, 20);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(141, 110);
             this.button4.TabIndex = 3;
@@ -146,7 +146,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(156, 97);
             this.button3.TabIndex = 0;
-            this.button3.Text = "button3";
+            this.button3.Text = "Confirm Password";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click_2);
             // 

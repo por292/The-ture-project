@@ -123,7 +123,7 @@ namespace The_ture_project
 
         static void main (string[] args)
         {
-          //Console.WriteLine(checkPassword("MrAnjunisthebest",16));
+         
         }
         static bool checkPassword(string input, int minimum)
         {
@@ -132,7 +132,7 @@ namespace The_ture_project
             bool hasLow = false;
             bool hasSpec = false;
             char currentCharacter;
-            string thepass = "MrAnjunisthebest1!";
+            string thepass = "";
 
             if(input.Length < minimum)
             {

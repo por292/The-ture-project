@@ -44,11 +44,11 @@
             this.dgvAvailable = new System.Windows.Forms.DataGridView();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtOrderName = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.txtDescription = new System.Windows.Forms.TextBox();
-            this.txtOrderName = new System.Windows.Forms.TextBox();
             this.pnlContent1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCurrentOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailable)).BeginInit();
@@ -190,6 +190,22 @@
             this.colName.Name = "colName";
             this.colName.ReadOnly = true;
             // 
+            // txtOrderName
+            // 
+            this.txtOrderName.Location = new System.Drawing.Point(409, 35);
+            this.txtOrderName.Name = "txtOrderName";
+            this.txtOrderName.Size = new System.Drawing.Size(10, 20);
+            this.txtOrderName.TabIndex = 9;
+            this.txtOrderName.TextChanged += new System.EventHandler(this.txtOrderName_TextChanged);
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Location = new System.Drawing.Point(425, 35);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(10, 20);
+            this.txtDescription.TabIndex = 10;
+            this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
+            // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
@@ -221,22 +237,6 @@
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // txtDescription
-            // 
-            this.txtDescription.Location = new System.Drawing.Point(413, 129);
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(10, 20);
-            this.txtDescription.TabIndex = 10;
-            this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
-            // 
-            // txtOrderName
-            // 
-            this.txtOrderName.Location = new System.Drawing.Point(413, 245);
-            this.txtOrderName.Name = "txtOrderName";
-            this.txtOrderName.Size = new System.Drawing.Size(10, 20);
-            this.txtOrderName.TabIndex = 9;
-            this.txtOrderName.TextChanged += new System.EventHandler(this.txtOrderName_TextChanged);
             // 
             // UC_Orders
             // 

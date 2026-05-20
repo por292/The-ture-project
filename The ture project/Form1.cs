@@ -132,7 +132,7 @@ namespace The_ture_project
             bool hasLow = false;
             bool hasSpec = false;
             char currentCharacter;
-            string thepass = "";
+            string thepass = "MrAnjunisthebest1!";
 
             if(input.Length < minimum)
             {
@@ -167,7 +167,7 @@ namespace The_ture_project
             {
                 return false;
             }
-            
+           
         }
 
         private void button4_Click(object sender, EventArgs e)

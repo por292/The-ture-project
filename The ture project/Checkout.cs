@@ -34,7 +34,23 @@ namespace The_ture_project
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ShowScreen(new UC_Orders());
+        }
+        private void ShowScreen(UserControl newScreen)
+        {
+            foreach (Control ctrl in pnlContent.Controls)
+            {
+                ctrl.Dispose();
+            }
+
+            pnlContent.Controls.Clear();
+            newScreen.Dock = DockStyle.Fill;
+            pnlContent.Controls.Add(newScreen);
         }
     }
 }

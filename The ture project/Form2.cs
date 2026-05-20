@@ -27,5 +27,15 @@ namespace The_ture_project
             this.Owner.Show();
             this.Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

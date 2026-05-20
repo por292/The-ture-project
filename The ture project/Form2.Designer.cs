@@ -35,6 +35,7 @@
             this.Passtxt = new System.Windows.Forms.TextBox();
             this.User = new System.Windows.Forms.TextBox();
             this.Back = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +59,7 @@
             // Username
             // 
             this.Username.AutoSize = true;
-            this.Username.Location = new System.Drawing.Point(658, 224);
+            this.Username.Location = new System.Drawing.Point(656, 205);
             this.Username.Name = "Username";
             this.Username.Size = new System.Drawing.Size(55, 13);
             this.Username.TabIndex = 3;
@@ -66,7 +67,7 @@
             // 
             // Passtxt1
             // 
-            this.Passtxt1.Location = new System.Drawing.Point(563, 328);
+            this.Passtxt1.Location = new System.Drawing.Point(740, 309);
             this.Passtxt1.Name = "Passtxt1";
             this.Passtxt1.PasswordChar = '*';
             this.Passtxt1.Size = new System.Drawing.Size(239, 20);
@@ -74,7 +75,7 @@
             // 
             // Passtxt
             // 
-            this.Passtxt.Location = new System.Drawing.Point(563, 279);
+            this.Passtxt.Location = new System.Drawing.Point(740, 256);
             this.Passtxt.Name = "Passtxt";
             this.Passtxt.PasswordChar = '*';
             this.Passtxt.Size = new System.Drawing.Size(239, 20);
@@ -82,7 +83,7 @@
             // 
             // User
             // 
-            this.User.Location = new System.Drawing.Point(563, 240);
+            this.User.Location = new System.Drawing.Point(740, 202);
             this.User.Name = "User";
             this.User.Size = new System.Drawing.Size(239, 20);
             this.User.TabIndex = 6;
@@ -97,11 +98,22 @@
             this.Back.UseVisualStyleBackColor = true;
             this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(110, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Restart";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1513, 604);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.User);
             this.Controls.Add(this.Passtxt);
@@ -125,5 +137,6 @@
         private System.Windows.Forms.TextBox Passtxt;
         private System.Windows.Forms.TextBox User;
         private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.Button button1;
     }
 }

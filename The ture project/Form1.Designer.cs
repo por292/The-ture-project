@@ -34,14 +34,19 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
+            this.Username = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.Username = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.pnlContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -103,6 +108,10 @@
             // pnlContent
             // 
             this.pnlContent.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.pnlContent.Controls.Add(this.checkBox1);
+            this.pnlContent.Controls.Add(this.button6);
+            this.pnlContent.Controls.Add(this.pictureBox1);
+            this.pnlContent.Controls.Add(this.button5);
             this.pnlContent.Controls.Add(this.Username);
             this.pnlContent.Controls.Add(this.textBox2);
             this.pnlContent.Controls.Add(this.button4);
@@ -114,14 +123,30 @@
             this.pnlContent.Size = new System.Drawing.Size(1335, 698);
             this.pnlContent.TabIndex = 4;
             // 
+            // Username
+            // 
+            this.Username.AutoSize = true;
+            this.Username.Location = new System.Drawing.Point(621, 236);
+            this.Username.Name = "Username";
+            this.Username.Size = new System.Drawing.Size(55, 13);
+            this.Username.TabIndex = 5;
+            this.Username.Text = "Username";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(703, 233);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(260, 20);
+            this.textBox2.TabIndex = 4;
+            // 
             // button4
             // 
             this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(575, 429);
+            this.button4.Location = new System.Drawing.Point(757, 324);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(156, 110);
+            this.button4.Size = new System.Drawing.Size(156, 48);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Regiter";
+            this.button4.Text = "Register";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -137,7 +162,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(524, 300);
+            this.textBox1.Location = new System.Drawing.Point(703, 281);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(260, 20);
@@ -146,29 +171,54 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(575, 326);
+            this.button3.Location = new System.Drawing.Point(1016, 233);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 97);
+            this.button3.Size = new System.Drawing.Size(129, 68);
             this.button3.TabIndex = 0;
             this.button3.Text = "Confirm Password and username";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click_2);
             // 
-            // textBox2
+            // button5
             // 
-            this.textBox2.Location = new System.Drawing.Point(524, 261);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(260, 20);
-            this.textBox2.TabIndex = 4;
+            this.button5.Location = new System.Drawing.Point(757, 393);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(156, 53);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Restart";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // Username
+            // pictureBox1
             // 
-            this.Username.AutoSize = true;
-            this.Username.Location = new System.Drawing.Point(621, 236);
-            this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(55, 13);
-            this.Username.TabIndex = 5;
-            this.Username.Text = "Username";
+            this.pictureBox1.Image = global::The_ture_project.Properties.Resources.OIP_511455695;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 206);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(334, 269);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(1195, 574);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(140, 121);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "Exit";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(713, 303);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(99, 17);
+            this.checkBox1.TabIndex = 11;
+            this.checkBox1.Text = "ShowPassword";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Form1
             // 
@@ -184,6 +234,7 @@
             this.panel1.ResumeLayout(false);
             this.pnlContent.ResumeLayout(false);
             this.pnlContent.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -202,6 +253,10 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label Username;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

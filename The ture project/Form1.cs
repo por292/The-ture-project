@@ -99,6 +99,7 @@ namespace The_ture_project
 
         private void button3_Click_2(object sender, EventArgs e)
         {
+          
             Console.WriteLine(textBox1.Text);
             bool passcheck = checkPassword(textBox1.Text, 16);
             if (passcheck)
@@ -183,6 +184,29 @@ namespace The_ture_project
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.Clear();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked == true)
+            {
+                textBox1.UseSystemPasswordChar = false;
+            }
+            else 
+            {
+            textBox1.UseSystemPasswordChar = true;
+            }
         }
     }
 }

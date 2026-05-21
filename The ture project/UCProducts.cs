@@ -23,7 +23,7 @@ namespace The_ture_project
        // string filePath = "C:/Users/0348550/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
         string filePath = "C:/Users/jan/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             //ADD
             if (!ValidateInputs()) return;
@@ -45,7 +45,7 @@ namespace The_ture_project
             ClearFields();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             //Update
             // 1. Check if a Product ID is present to identify the record
@@ -84,7 +84,7 @@ namespace The_ture_project
             }
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void Button8_Click(object sender, EventArgs e)
         {
             //SAVE
             try
@@ -105,7 +105,7 @@ namespace The_ture_project
             }
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void Button7_Click(object sender, EventArgs e)
         {
             //DEL
             string searchTerm = txtDelete.Text.Trim();
@@ -197,12 +197,12 @@ namespace The_ture_project
             txtQuantity.Clear();
         }
 
-        private void dgvInventory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DgvInventory_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void txtID_TextChanged(object sender, EventArgs e)
+        private void TxtID_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -58,7 +58,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Home";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -69,7 +69,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Products";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // BuildandEdit
             // 
@@ -80,7 +80,7 @@
             this.BuildandEdit.TabIndex = 2;
             this.BuildandEdit.Text = "Orders";
             this.BuildandEdit.UseVisualStyleBackColor = true;
-            this.BuildandEdit.Click += new System.EventHandler(this.button3_Click);
+            this.BuildandEdit.Click += new System.EventHandler(this.Button3_Click);
             // 
             // panel1
             // 
@@ -103,7 +103,7 @@
             this.button7.TabIndex = 3;
             this.button7.Text = "Checkout";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.Button7_Click);
             // 
             // pnlContent
             // 
@@ -148,7 +148,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Register";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // label1
             // 
@@ -158,7 +158,7 @@
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Password";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.label1.Click += new System.EventHandler(this.Label1_Click_1);
             // 
             // textBox1
             // 
@@ -167,7 +167,7 @@
             this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(260, 20);
             this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // button3
             // 
@@ -177,7 +177,7 @@
             this.button3.TabIndex = 0;
             this.button3.Text = "Confirm Password and username";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_2);
+            this.button3.Click += new System.EventHandler(this.Button3_Click_2);
             // 
             // button5
             // 
@@ -187,7 +187,7 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "Restart";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // pictureBox1
             // 
@@ -207,7 +207,7 @@
             this.button6.TabIndex = 10;
             this.button6.Text = "Exit";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // checkBox1
             // 
@@ -218,7 +218,7 @@
             this.checkBox1.TabIndex = 11;
             this.checkBox1.Text = "ShowPassword";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // Form1
             // 

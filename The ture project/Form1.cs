@@ -20,12 +20,12 @@ namespace The_ture_project
             InitializeComponent();
             
         }
-        private void label1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
             
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void Label3_Click(object sender, EventArgs e)
         {
 
         }
@@ -35,43 +35,43 @@ namespace The_ture_project
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             ShowScreen(new UC_Orders());
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void Label5_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
+        private void GroupBox2_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void GroupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void Label6_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             ShowScreen(new HomePage());
         }
         
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
            ShowScreen(new UCProducts());
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void Button7_Click(object sender, EventArgs e)
         {
             ShowScreen(new Checkout());
         }
@@ -87,21 +87,21 @@ namespace The_ture_project
             pnlContent.Controls.Add(newScreen);
         }
 
-        private void textBox7_TextChanged(object sender, EventArgs e)
+        private void TextBox7_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
+        private void Button3_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click_2(object sender, EventArgs e)
+        private void Button3_Click_2(object sender, EventArgs e)
         {
           
             Console.WriteLine(textBox1.Text);
-            bool passcheck = checkPassword(textBox1.Text, 16);
+            bool passcheck = CheckPassword(textBox1.Text, 16);
             if (passcheck)
             {
                 MessageBox.Show("Password is correct");
@@ -117,16 +117,13 @@ namespace The_ture_project
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        static void main (string[] args)
-        {
-         
-        }
-        static bool checkPassword(string input, int minimum)
+ 
+        static bool CheckPassword(string input, int minimum)
         {
             bool hasNum = false;
             bool hasCap = false;
@@ -171,7 +168,7 @@ namespace The_ture_project
            
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
             Form2 f2 = new Form2();
             f2.Owner = this;
@@ -181,23 +178,23 @@ namespace The_ture_project
             this.Hide();
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void Label1_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Button5_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
             textBox1.Clear();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void Button6_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
             if(checkBox1.Checked == true)
             {

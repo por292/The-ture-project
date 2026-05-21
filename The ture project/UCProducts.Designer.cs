@@ -69,7 +69,7 @@
             this.dgvInventory.Name = "dgvInventory";
             this.dgvInventory.Size = new System.Drawing.Size(546, 544);
             this.dgvInventory.TabIndex = 1;
-            this.dgvInventory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInventory_CellContentClick);
+            this.dgvInventory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvInventory_CellContentClick);
             // 
             // groupBox3
             // 
@@ -139,7 +139,7 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(214, 20);
             this.txtID.TabIndex = 10;
-            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
+            this.txtID.TextChanged += new System.EventHandler(this.TxtID_TextChanged);
             // 
             // label13
             // 
@@ -201,7 +201,7 @@
             this.Save.TabIndex = 3;
             this.Save.Text = "Save";
             this.Save.UseVisualStyleBackColor = true;
-            this.Save.Click += new System.EventHandler(this.button8_Click);
+            this.Save.Click += new System.EventHandler(this.Button8_Click);
             // 
             // DEL
             // 
@@ -211,7 +211,7 @@
             this.DEL.TabIndex = 2;
             this.DEL.Text = "DEL";
             this.DEL.UseVisualStyleBackColor = true;
-            this.DEL.Click += new System.EventHandler(this.button7_Click);
+            this.DEL.Click += new System.EventHandler(this.Button7_Click);
             // 
             // Update
             // 
@@ -221,7 +221,7 @@
             this.Update.TabIndex = 1;
             this.Update.Text = "Update";
             this.Update.UseVisualStyleBackColor = true;
-            this.Update.Click += new System.EventHandler(this.button3_Click);
+            this.Update.Click += new System.EventHandler(this.Button3_Click);
             // 
             // ADD
             // 
@@ -231,7 +231,7 @@
             this.ADD.TabIndex = 0;
             this.ADD.Text = "ADD";
             this.ADD.UseVisualStyleBackColor = true;
-            this.ADD.Click += new System.EventHandler(this.button2_Click);
+            this.ADD.Click += new System.EventHandler(this.Button2_Click);
             // 
             // UCProducts
             // 

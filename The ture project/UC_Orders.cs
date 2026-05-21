@@ -88,18 +88,18 @@ namespace The_ture_project
         }
 
         // Drag and Drop implementation
-        private void dgvAvailable_MouseDown(object sender, MouseEventArgs e)
+        private void DgvAvailable_MouseDown(object sender, MouseEventArgs e)
         {
             
         }
 
-        private void dgvCurrentOrder_DragEnter(object sender, DragEventArgs e)
+        private void DgvCurrentOrder_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(typeof(Products)))
                 e.Effect = DragDropEffects.Copy;
         }
 
-        private void dgvCurrentOrder_DragDrop(object sender, DragEventArgs e)
+        private void DgvCurrentOrder_DragDrop(object sender, DragEventArgs e)
         {
             Products droppedProduct = (Products)e.Data.GetData(typeof(Products));
             AddProductToOrder(droppedProduct);
@@ -143,7 +143,7 @@ namespace The_ture_project
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             ShowScreen(new Checkout());
             if (string.IsNullOrWhiteSpace(txtOrderName.Text))
@@ -200,7 +200,7 @@ namespace The_ture_project
             UpdateTotal();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             if (dgvAvailable.SelectedRows.Count > 0)
             {
@@ -216,7 +216,7 @@ namespace The_ture_project
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             if (dgvCurrentOrder.SelectedRows.Count > 0)
             {
@@ -236,7 +236,7 @@ namespace The_ture_project
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
             if (_currentOrderItems.Count == 0) return;
 
@@ -261,7 +261,7 @@ namespace The_ture_project
             MessageBox.Show("Order saved successfully.");
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Button5_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
@@ -311,12 +311,12 @@ namespace The_ture_project
             pnlContent1.Controls.Add(newScreen);
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void GroupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void dgvAvailable_MouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        private void DgvAvailable_MouseDown(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (dgvAvailable.SelectedRows.Count > 0)
             {
@@ -325,22 +325,22 @@ namespace The_ture_project
             }
         }
 
-        private void dgvCurrentOrder_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DgvCurrentOrder_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void txtDescription_TextChanged(object sender, EventArgs e)
+        private void TxtDescription_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void dgvAvailable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DgvAvailable_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void txtOrderName_TextChanged(object sender, EventArgs e)
+        private void TxtOrderName_TextChanged(object sender, EventArgs e)
         {
 
         }

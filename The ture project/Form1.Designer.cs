@@ -34,16 +34,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.Username = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.pnlContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,7 +51,6 @@
             // 
             // button1
             // 
-            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(34, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -62,7 +61,6 @@
             // 
             // button2
             // 
-            this.button2.Enabled = false;
             this.button2.Location = new System.Drawing.Point(199, 11);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
@@ -73,7 +71,6 @@
             // 
             // BuildandEdit
             // 
-            this.BuildandEdit.Enabled = false;
             this.BuildandEdit.Location = new System.Drawing.Point(382, 11);
             this.BuildandEdit.Name = "BuildandEdit";
             this.BuildandEdit.Size = new System.Drawing.Size(75, 23);
@@ -96,7 +93,6 @@
             // 
             // button7
             // 
-            this.button7.Enabled = false;
             this.button7.Location = new System.Drawing.Point(590, 12);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
@@ -123,6 +119,47 @@
             this.pnlContent.Size = new System.Drawing.Size(1335, 698);
             this.pnlContent.TabIndex = 4;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(713, 303);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(99, 17);
+            this.checkBox1.TabIndex = 11;
+            this.checkBox1.Text = "ShowPassword";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(1195, 574);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(140, 121);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "Exit";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::The_ture_project.Properties.Resources.OIP_511455695;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 206);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(334, 269);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(757, 393);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(156, 53);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Restart";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            // 
             // Username
             // 
             this.Username.AutoSize = true;
@@ -141,7 +178,6 @@
             // 
             // button4
             // 
-            this.button4.Enabled = false;
             this.button4.Location = new System.Drawing.Point(757, 324);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(156, 48);
@@ -178,47 +214,6 @@
             this.button3.Text = "Confirm Password and username";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.Button3_Click_2);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(757, 393);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(156, 53);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Restart";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::The_ture_project.Properties.Resources.OIP_511455695;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 206);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(334, 269);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(1195, 574);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(140, 121);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Exit";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.Button6_Click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(713, 303);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(99, 17);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "ShowPassword";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // Form1
             // 

@@ -100,7 +100,7 @@ namespace The_ture_project
         private void Button3_Click_2(object sender, EventArgs e)
         {
           
-            Console.WriteLine(textBox1.Text);
+           /* Console.WriteLine(textBox1.Text);
             bool passcheck = CheckPassword(textBox1.Text, 16);
             if (passcheck)
             {
@@ -114,7 +114,7 @@ namespace The_ture_project
             else
             {
                 MessageBox.Show("Password is incorrect");
-            }
+            }*/
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -123,7 +123,7 @@ namespace The_ture_project
         }
 
  
-        static bool CheckPassword(string input, int minimum)
+        /*static bool CheckPassword(string input, int minimum)
         {
             bool hasNum = false;
             bool hasCap = false;
@@ -166,7 +166,7 @@ namespace The_ture_project
                 return false;
             }
            
-        }
+        }*/
 
         private void Button4_Click(object sender, EventArgs e)
         {

@@ -41,7 +41,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(636, 312);
+            this.label1.Location = new System.Drawing.Point(427, 299);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(658, 263);
+            this.label2.Location = new System.Drawing.Point(453, 253);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 2;
@@ -59,7 +59,7 @@
             // Username
             // 
             this.Username.AutoSize = true;
-            this.Username.Location = new System.Drawing.Point(656, 205);
+            this.Username.Location = new System.Drawing.Point(451, 202);
             this.Username.Name = "Username";
             this.Username.Size = new System.Drawing.Size(55, 13);
             this.Username.TabIndex = 3;
@@ -67,7 +67,7 @@
             // 
             // Passtxt1
             // 
-            this.Passtxt1.Location = new System.Drawing.Point(740, 309);
+            this.Passtxt1.Location = new System.Drawing.Point(523, 296);
             this.Passtxt1.Name = "Passtxt1";
             this.Passtxt1.PasswordChar = '*';
             this.Passtxt1.Size = new System.Drawing.Size(239, 20);
@@ -75,7 +75,7 @@
             // 
             // Passtxt
             // 
-            this.Passtxt.Location = new System.Drawing.Point(740, 256);
+            this.Passtxt.Location = new System.Drawing.Point(523, 253);
             this.Passtxt.Name = "Passtxt";
             this.Passtxt.PasswordChar = '*';
             this.Passtxt.Size = new System.Drawing.Size(239, 20);
@@ -83,7 +83,7 @@
             // 
             // User
             // 
-            this.User.Location = new System.Drawing.Point(740, 202);
+            this.User.Location = new System.Drawing.Point(523, 202);
             this.User.Name = "User";
             this.User.Size = new System.Drawing.Size(239, 20);
             this.User.TabIndex = 6;

@@ -63,7 +63,7 @@
             this.Checkout.TabIndex = 0;
             this.Checkout.Text = "Checkout";
             this.Checkout.UseVisualStyleBackColor = true;
-            this.Checkout.Click += new System.EventHandler(this.button1_Click);
+            this.Checkout.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -73,7 +73,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Add to order";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button3
             // 
@@ -83,7 +83,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Remove";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button4
             // 
@@ -93,7 +93,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Save";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button5
             // 
@@ -103,7 +103,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Load order";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // pnlContent1
             // 
@@ -132,7 +132,7 @@
             this.dgvCurrentOrder.Name = "dgvCurrentOrder";
             this.dgvCurrentOrder.Size = new System.Drawing.Size(551, 586);
             this.dgvCurrentOrder.TabIndex = 12;
-            this.dgvCurrentOrder.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCurrentOrder_CellContentClick);
+            this.dgvCurrentOrder.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCurrentOrder_CellContentClick);
             // 
             // ProductID
             // 
@@ -174,7 +174,7 @@
             this.dgvAvailable.Name = "dgvAvailable";
             this.dgvAvailable.Size = new System.Drawing.Size(251, 586);
             this.dgvAvailable.TabIndex = 11;
-            this.dgvAvailable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAvailable_CellContentClick);
+            this.dgvAvailable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvAvailable_CellContentClick);
             // 
             // colID
             // 
@@ -196,7 +196,7 @@
             this.txtOrderName.Name = "txtOrderName";
             this.txtOrderName.Size = new System.Drawing.Size(10, 20);
             this.txtOrderName.TabIndex = 9;
-            this.txtOrderName.TextChanged += new System.EventHandler(this.txtOrderName_TextChanged);
+            this.txtOrderName.TextChanged += new System.EventHandler(this.TxtOrderName_TextChanged);
             // 
             // txtDescription
             // 
@@ -204,7 +204,7 @@
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(10, 20);
             this.txtDescription.TabIndex = 10;
-            this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
+            this.txtDescription.TextChanged += new System.EventHandler(this.TxtDescription_TextChanged);
             // 
             // lblTotal
             // 
@@ -231,7 +231,7 @@
             this.groupBox1.Size = new System.Drawing.Size(103, 630);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
             // contextMenuStrip1
             // 

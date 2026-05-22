@@ -20,8 +20,8 @@ namespace The_ture_project
         private BindingList<Products> _inventoryList = new BindingList<Products>();
         private BindingSource _bindingSource = new BindingSource();
 
-       // string filePath = "C:/Users/0348550/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
-        string filePath = "C:/Users/jan/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
+        string filePath = "C:/Users/0348550/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
+       // string filePath = "C:/Users/jan/Downloads/Copy of shop-product-catalog - shop-product-catalog.csv";
 
         private void Button2_Click(object sender, EventArgs e)
         {

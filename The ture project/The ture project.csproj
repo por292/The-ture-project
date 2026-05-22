@@ -108,6 +108,7 @@
       <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="InventoryService.cs" />
+    <Compile Include="password.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="UCProducts.cs">
       <SubType>UserControl</SubType>

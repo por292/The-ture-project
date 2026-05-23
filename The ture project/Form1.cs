@@ -131,9 +131,9 @@ namespace The_ture_project
         ]";*/
             var jsonPath = Path.Combine(AppContext.BaseDirectory, "PasswordManager.json"); // file placed in output
             string json = File.ReadAllText(jsonPath);
-            var obj = JsonSerializer.Deserialize<List<Account>>(json);
-
             var accounts = JsonSerializer.Deserialize<List<Account>>(json);
+
+            //var accounts = JsonSerializer.Deserialize<List<Account>>(json);
 
             foreach (var acc in accounts)
             {

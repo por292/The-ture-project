@@ -18,9 +18,9 @@ public class Account
     public string username { get; set; }
     public string password { get; set; }
 }
-class Program
+public class Program
 {
-    static void Main()
+   /* public bool CheckPasswordNew(string inputPass)
     {
         string json = @"[
           { ""id"": 1, ""username"": ""alex_starling99"", ""password"": ""Tr!$7#qP29"" },
@@ -33,6 +33,11 @@ class Program
         foreach (var acc in accounts)
         {
             Console.WriteLine($"ID: {acc.id}, Username: {acc.username}, Password: {acc.password}");
+            if (acc.password == inputPass)
+            {
+                Console.WriteLine("Found good password");
+            }
         }
-    }
+        return true;
+    }*/
 }

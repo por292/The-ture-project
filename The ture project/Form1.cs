@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
-using System.IO;
 using System.Windows.Forms;
 
 
@@ -18,7 +19,6 @@ namespace The_ture_project
         public Form1()
         {
             InitializeComponent();
-            
         }
         private void Label1_Click(object sender, EventArgs e)
         {
@@ -100,8 +100,8 @@ namespace The_ture_project
         private void Button3_Click_2(object sender, EventArgs e)
         {
           
-           /* Console.WriteLine(textBox1.Text);
-            bool passcheck = CheckPassword(textBox1.Text, 16);
+           /* Console.WriteLine(textBox1.Text); */
+            bool passcheck = CheckPasswordNew(textBox1.Text, textBox2.Text);
             if (passcheck)
             {
                 MessageBox.Show("Password is correct");
@@ -113,8 +113,8 @@ namespace The_ture_project
             }
             else
             {
-                MessageBox.Show("Password is incorrect");
-            }*/
+                MessageBox.Show("Password is or Username incorrect");
+            }
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -122,7 +122,32 @@ namespace The_ture_project
 
         }
 
- 
+        static bool CheckPasswordNew(string inputPass, string inputUsername)
+        {
+            /*string json = @"[
+          { ""id"": 1, ""username"": ""alex_starling99"", ""password"": ""Tr!$7#qP29"" },
+          { ""id"": 2, ""username"": ""bruce_lee_88"", ""password"": ""P@ssw0rd!_88"" },
+          { ""id"": 3, ""username"": ""morgan_dev_2026"", ""password"": ""C0d!ng$tr0ng!&"" }
+        ]";*/
+            var jsonPath = Path.Combine(AppContext.BaseDirectory, "PasswordManager.json"); // file placed in output
+            string json = File.ReadAllText(jsonPath);
+            var obj = JsonSerializer.Deserialize<List<Account>>(json);
+
+            var accounts = JsonSerializer.Deserialize<List<Account>>(json);
+
+            foreach (var acc in accounts)
+            {
+                //Console.WriteLine($"ID: {acc.id}, Username: {acc.username}, Password: {acc.password}");
+                if (acc.password == inputPass && acc.username == inputUsername)
+                {
+                    Console.WriteLine("Found good password & username");
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
         /*static bool CheckPassword(string input, int minimum)
         {
             bool hasNum = false;
@@ -199,11 +224,17 @@ namespace The_ture_project
             if(checkBox1.Checked == true)
             {
                 textBox1.UseSystemPasswordChar = false;
+                
             }
             else 
             {
-            textBox1.UseSystemPasswordChar = true;
+                textBox1.UseSystemPasswordChar = true;
             }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

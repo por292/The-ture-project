@@ -77,12 +77,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuildandEdit.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="BuildandEdit.Designer.cs">
-      <DependentUpon>BuildandEdit.cs</DependentUpon>
-    </Compile>
     <Compile Include="Checkout.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -124,9 +118,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BuildandEdit.resx">
-      <DependentUpon>BuildandEdit.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Checkout.resx">
       <DependentUpon>Checkout.cs</DependentUpon>
     </EmbeddedResource>

@@ -133,8 +133,6 @@ namespace The_ture_project
             string json = File.ReadAllText(jsonPath);
             var accounts = JsonSerializer.Deserialize<List<Account>>(json);
 
-            //var accounts = JsonSerializer.Deserialize<List<Account>>(json);
-
             foreach (var acc in accounts)
             {
                 //Console.WriteLine($"ID: {acc.id}, Username: {acc.username}, Password: {acc.password}");

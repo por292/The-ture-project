@@ -124,11 +124,7 @@ namespace The_ture_project
 
         static bool CheckPasswordNew(string inputPass, string inputUsername)
         {
-            /*string json = @"[
-          { ""id"": 1, ""username"": ""alex_starling99"", ""password"": ""Tr!$7#qP29"" },
-          { ""id"": 2, ""username"": ""bruce_lee_88"", ""password"": ""P@ssw0rd!_88"" },
-          { ""id"": 3, ""username"": ""morgan_dev_2026"", ""password"": ""C0d!ng$tr0ng!&"" }
-        ]";*/
+            
             var jsonPath = Path.Combine(AppContext.BaseDirectory, "PasswordManager.json"); // file placed in output
             string json = File.ReadAllText(jsonPath);
             var accounts = JsonSerializer.Deserialize<List<Account>>(json);
@@ -144,52 +140,6 @@ namespace The_ture_project
             }
             return false;
         }
-
-
-        /*static bool CheckPassword(string input, int minimum)
-        {
-            bool hasNum = false;
-            bool hasCap = false;
-            bool hasLow = false;
-            bool hasSpec = false;
-            char currentCharacter;
-            string thepass = "MrAnjunisthebest1!";
-
-            if(input.Length < minimum)
-            {
-                return false;
-            }
-            for (int i = 0; i < input.Length; i++)
-            {
-                currentCharacter = input[i];
-                if (char.IsDigit(currentCharacter))
-                {
-                    hasNum = true;
-                }
-                else if (char.IsUpper(currentCharacter))
-                {
-                    hasCap = true;
-                }
-                else if (char.IsLower(currentCharacter))
-                {
-                    hasLow = true;
-                }
-                else if (!char.IsLetterOrDigit(currentCharacter))
-                {
-                    hasSpec = true;
-                }
-                
-            }
-            if (hasNum && hasCap && hasLow && hasSpec)
-            {
-                if (input == thepass) { return true; } else { return false; }
-            }
-            else
-            {
-                return false;
-            }
-           
-        }*/
 
         private void Button4_Click(object sender, EventArgs e)
         {
